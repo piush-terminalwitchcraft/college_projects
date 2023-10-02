@@ -1,0 +1,16 @@
+[debug] [2023-09-08T10:24:19.067Z] ----------------------------------------------------------------------
+[debug] [2023-09-08T10:24:19.069Z] Command:       /usr/bin/node /usr/bin/firebase login
+[debug] [2023-09-08T10:24:19.069Z] CLI Version:   11.24.0
+[debug] [2023-09-08T10:24:19.069Z] Platform:      linux
+[debug] [2023-09-08T10:24:19.069Z] Node Version:  v20.6.0
+[debug] [2023-09-08T10:24:19.069Z] Time:          Fri Sep 08 2023 15:54:19 GMT+0530 (India Standard Time)
+[debug] [2023-09-08T10:24:19.070Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-08T10:24:19.072Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as piushpaul.16@gmail.com
+[debug] [2023-09-08T10:24:24.302Z] Error: Timed out.
+    at Timeout.<anonymous> (/usr/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.

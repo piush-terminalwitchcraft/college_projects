@@ -3,12 +3,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-interface CarouselProps{
-    children: ReactNode[]
+interface CarouselProps {
+  children: ReactNode[];
 }
 
-const Carousel = (props : CarouselProps) => {
-    const {children} = props; 
+const Carousel: React.FC<any> = ({ children }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -17,20 +16,16 @@ const Carousel = (props : CarouselProps) => {
     slidesToScroll: 1,
     // centerMode: true,
     // centerPadding: '0',
-    autoplay: true,         // Enable autoplay
-    autoplaySpeed: 1600,   // Set autoplay speed in milliseconds (e.g., 3 seconds)
+    autoplay: true,
+    autoplaySpeed: 1600,
   };
 
   return (
     <div className="carousel-container">
       <Slider {...settings}>
-        {
-            children.map((child: ReactNode, index: number)=>{
-                    return(
-                        <div className='carousel-item' key={index}>{child}</div>
-                    )
-            })
-        }
+        {children.map((child: any, index: number) => (
+          <div className='carousel-item' key={index}>{child}</div>
+        ))}
       </Slider>
     </div>
   );
